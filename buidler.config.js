@@ -3,6 +3,10 @@ usePlugin("@nomiclabs/buidler-etherscan");
 
 module.exports = {
   networks: {
+    kovan: {
+      url: "https://kovan.infura.io/v3/" + process.env.INFURA_KEY,
+      accounts: [process.env.MNEMONIC]
+    }
     rinkeby: {
       url: "https://rinkeby.infura.io/v3/" + process.env.INFURA_KEY,
       accounts: [process.env.MNEMONIC]
